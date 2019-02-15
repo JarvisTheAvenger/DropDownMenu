@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomView" customModule="UICreationComponent" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="AJn-yH-6wM"/>
+                <outlet property="dropDownButton" destination="7zM-9r-0fB" id="SiV-Cg-FhC"/>
+                <outlet property="heightConstraint" destination="zGq-bv-I8A" id="NsM-bB-bCw"/>
+                <outlet property="tableView" destination="u5X-tR-uIQ" id="JDD-gA-HU2"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="272" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7zM-9r-0fB">
+                    <rect key="frame" x="0.0" y="0.0" width="272" height="50"/>
+                    <color key="backgroundColor" red="1" green="0.6324029592" blue="0.63990832610000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="CHP-UL-klS"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                    <inset key="imageEdgeInsets" minX="200" minY="0.0" maxX="200" maxY="0.0"/>
+                    <state key="normal" title="Select list">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="dropDownButtonAction:" destination="-1" eventType="touchUpInside" id="HOH-Er-fV0"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="u5X-tR-uIQ">
+                    <rect key="frame" x="0.0" y="50" width="272" height="0.0"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" id="zGq-bv-I8A"/>
+                    </constraints>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="u5X-tR-uIQ" firstAttribute="top" secondItem="7zM-9r-0fB" secondAttribute="bottom" id="6WS-PS-tuP"/>
+                <constraint firstItem="u5X-tR-uIQ" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="CK7-9s-TGC"/>
+                <constraint firstItem="u5X-tR-uIQ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="F2B-5l-cLf"/>
+                <constraint firstItem="7zM-9r-0fB" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="Mv7-nb-BDD"/>
+                <constraint firstItem="7zM-9r-0fB" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="POl-RL-HFB"/>
+                <constraint firstItem="7zM-9r-0fB" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="WPy-uQ-U3U"/>
+                <constraint firstItem="u5X-tR-uIQ" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="xPO-pV-jaq"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="169.59999999999999" y="-30.584707646176913"/>
+        </view>
+    </objects>
+</document>
